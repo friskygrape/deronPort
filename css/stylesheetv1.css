@@ -1,0 +1,242 @@
+* {
+  font-family: 'Lato', sans-serif;
+}
+
+body, html {
+  height: 100%;
+}
+
+.pageL {
+  width: 100%;
+  height: 100vh;
+}
+
+#ani {
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px;
+  height: 150px;
+  background-color: coral;
+  -webkit-animation: square-to-circle 4s 0.5s infinite cubic-bezier(1, 0.015, 0.295, 1.225) alternate;
+  margin-bottom: 25px;
+}
+
+@-webkit-keyframes square-to-circle {
+  0% {
+    border-radius: 0 0 0 0;
+    background: #EE6457;
+    transform: rotate(0deg);
+  }
+  25% {
+    border-radius: 50% 0 0 0;
+    background: #EE6457;
+    transform: rotate(45deg);
+  }
+  50% {
+    border-radius: 50% 50% 0 0;
+    background: #EE6457;
+    transform: rotate(90deg);
+  }
+  75% {
+    border-radius: 50% 50% 50% 0;
+    background: #EE6457;
+    transform: rotate(135deg);
+  }
+  100% {
+    border-radius: 50%;
+    background: #EE6457;
+    transform: rotate(180deg);
+  }
+}
+#nav ul {
+  list-style-type: none;
+  font-size: 1.5em;
+  text-align: center;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: #414042;
+  padding: 26px 0;
+}
+
+#nav li {
+  display: inline;
+  margin: 0 25px;
+}
+
+#nav a {
+  color: #414042;
+}
+
+#first-page {
+  height: 100vh;
+}
+
+#first-page #intro {
+  top: 0%;
+  vertical-align: middle;
+}
+
+#first-page #intro h1 {
+  font-size: 5em;
+  text-align: center;
+  font-weight: 900;
+  color: #EE6457;
+  letter-spacing: 7.5px;
+  margin: none;
+  padding: none;
+}
+
+#first-page #intro p {
+  font-size: 1.5em;
+  text-align: center;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: #414042;
+  letter-spacing: 4px;
+}
+
+#about h1 {
+  font-size: 5em;
+  text-align: center;
+  font-weight: 900;
+  color: #EE6457;
+  letter-spacing: 7.5px;
+  font-weight: 400;
+  font-size: 3.0em;
+}
+
+#about p {
+  font-size: 1.5em;
+  text-align: center;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: #414042;
+}
+
+.backCol {
+  background-color: #EE6457;
+}
+
+#second-page {
+  height: 100%;
+  vertical-align: middle;
+  width: 100%;
+}
+
+#second-page #mango h1 {
+  font-size: 5em;
+  text-align: center;
+  font-weight: 900;
+  color: #EE6457;
+  letter-spacing: 7.5px;
+}
+
+#second-page #mango h2 {
+  font-size: 2.6em;
+  text-align: center;
+  font-weight: 400;
+  color: #EE6457;
+  letter-spacing: 3px;
+  margin: 40px;
+  color: white;
+}
+
+#second-page #mango p {
+  font-size: 1.5em;
+  text-align: center;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: #414042;
+  margin: 50px 0;
+  color: white;
+}
+
+#second-page #images img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 60px;
+}
+
+#second-page #images p {
+  font-size: 1.5em;
+  text-align: center;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: #414042;
+  margin: 10px 0;
+  color: #BFBFBF;
+}
+
+#third-page {
+  height: 100vh;
+}
+
+#third-page h1 {
+  font-size: 2.6em;
+  text-align: center;
+  font-weight: 400;
+  color: #EE6457;
+  letter-spacing: 3px;
+  margin-top: 50vh;
+}
+
+#third-page p {
+  @inlcude para-style;
+  text-align: center;
+}
+
+#fourth-page {
+  height: 100vh;
+}
+
+#fourth-page h1 {
+  font-size: 2.6em;
+  text-align: center;
+  font-weight: 400;
+  color: #EE6457;
+  letter-spacing: 3px;
+  margin-top: 50vh;
+}
+
+#fourth-page p {
+  @inlcude title-style;
+  text-align: center;
+}
+
+.font-style h1 {
+  color: white;
+  font-size: 5em;
+  text-align: center;
+  font-weight: 900;
+  color: #EE6457;
+  letter-spacing: 7.5px;
+}
+
+.font-style h2 {
+  @inlcude sec-style;
+}
+
+.font-style p {
+  font-size: 1.5em;
+  text-align: center;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: #414042;
+}
+
+hr {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+}
+
+.backColor {
+  height: 100%;
+}
+
+/*# sourceMappingURL=stylesheetv1.css.map */

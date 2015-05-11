@@ -1,0 +1,263 @@
+* {
+	font-family: 'Lato', sans-serif;
+}
+
+body, html{
+	height:100%;
+	//background-color:#EE6457 ;
+
+}
+
+$color-light: #BFBFBF;
+$color-dark: #414042;
+$color-one:	#15A6B7;
+$color-two: #EE6457;
+$color-3:#DA7A02;
+$color-4:#D76702;
+
+
+@mixin title-style{
+	font-size: 5em;
+	text-align: center;
+	font-weight: 900;
+	color: $color-two;
+	letter-spacing:7.5px;
+}
+
+@mixin sec-style{
+	font-size: 2.6em;
+	text-align: center;
+	font-weight: 400;
+	color: $color-two;
+	letter-spacing: 3px;
+}
+
+@mixin para-style{
+	font-size: 1.5em;
+	text-align: center;
+	font-weight: 300;
+	letter-spacing: 1px;
+	color: $color-dark;
+}
+
+@mixin page{
+	//width: 100%;
+	height: 100vh;
+	//background: ;
+}
+
+.pageL{
+	width:100%;
+	height:100vh;
+}
+
+#ani {
+	margin-left:auto;
+	margin-right: auto;
+  width: 150px;
+  height: 150px;
+  background-color: coral;
+  -webkit-animation: square-to-circle 4s .5s infinite cubic-bezier(1,.015,.295,1.225) alternate;
+  margin-bottom:25px;
+}
+ 
+@-webkit-keyframes square-to-circle {
+  0%  {
+    border-radius:0 0 0 0;
+    background:$color-two;
+    transform:rotate(0deg);
+  }
+  25%  {
+    border-radius:50% 0 0 0;
+    background:$color-two;
+    transform:rotate(45deg);
+  }
+  50%  {
+    border-radius:50% 50% 0 0;
+    background:$color-two;
+    transform:rotate(90deg);
+  }
+  75%  { 
+    border-radius:50% 50% 50% 0;
+    background:$color-two;
+    transform:rotate(135deg);
+  }
+  100% {  
+    border-radius:50%;
+    background:$color-two;
+    transform:rotate(180deg);
+  }
+}
+
+#nav{
+	//width:100%;
+	//background-color:blue;
+}
+
+#nav ul{
+	list-style-type: none;
+	@include para-style;
+	padding: 26px 0;
+}
+
+#nav li{
+	display:inline;
+	margin: 0 25px;
+}
+
+#nav a{
+	color: $color-dark;
+}
+
+#first-page {
+	@include page;
+}
+
+
+#first-page #intro{
+
+	top:0%;
+
+
+
+	vertical-align:middle;
+
+}
+
+#first-page #intro h1{
+	@include title-style;
+	margin: none;
+	padding: none;
+}
+
+
+#first-page #intro p{
+	@include para-style;
+	letter-spacing:4px;
+}
+
+#about{
+	
+}
+
+#about h1{
+	@include title-style;
+	font-weight:400;
+	font-size:3.0em;
+}
+
+#about p{
+	@include para-style;
+}
+
+.backCol{
+	background-color: $color-two;
+}
+
+
+
+
+#second-page{
+	height: 100%;
+	vertical-align:middle;
+	//background-color: $color-two;
+	
+	width:100%;
+}
+#secod-page mango{
+	//background-color:$color-one;
+}
+
+#second-page #mango h1{
+	@include title-style;
+	//color:white;
+}
+
+#second-page #mango h2{
+	@include sec-style;
+	margin:40px;
+	color:white;
+}
+
+#second-page #mango p{
+	@include para-style;
+	margin:  50px 0;
+	color:white;
+}
+
+#second-page #images img{
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 60px;
+}
+
+#second-page #images p{
+	@include para-style;
+	margin: 10px 0;
+	color:$color-light;
+	
+}
+
+
+#third-page{
+	@include page;
+	//background-color:$color-two;
+}
+
+#third-page h1{
+	@include sec-style;
+	margin-top:50vh;
+}
+
+#third-page p{
+	@inlcude para-style;
+	text-align: center;
+}
+
+#fourth-page{
+	@include page;
+	//background-color:$color-two;
+}
+
+#fourth-page h1{
+	@include sec-style;
+	margin-top:50vh;
+}
+
+#fourth-page p{
+	@inlcude title-style;
+	text-align: center;
+}
+
+.font-style h1{
+	color:white;
+	@include title-style;
+	
+}
+
+.font-style h2{
+	@inlcude sec-style;
+}
+
+.font-style p{
+	@include para-style;
+
+}
+
+
+
+hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+}
+
+.backColor{
+	//background-color: $color-two;
+	height:100%;
+}
