@@ -21,6 +21,7 @@ body, html {
   -webkit-animation: square-to-circle 4s 0.5s infinite cubic-bezier(1, 0.015, 0.295, 1.225) alternate;
   margin-top: 15px;
   margin-bottom: 25px;
+  position: absolute;
 }
 
 @-webkit-keyframes square-to-circle {
@@ -51,7 +52,7 @@ body, html {
   }
 }
 #nav {
-  z-index: +1;
+  position: absolute;
 }
 
 #nav ul {
@@ -73,29 +74,11 @@ body, html {
   color: #414042;
 }
 
-#first-page {
-  height: 100vh;
-  background-color: white;
-}
-
-#first-page #intro {
-  margin-top: 20%;
-}
-
-#first-page #intro h1 {
-  font-size: 5em;
-  text-align: center;
-  font-weight: 900;
-  color: #EE6457;
-  letter-spacing: 7.5px;
+#close {
+  right: 0;
 }
 
 #first-page #intro p {
-  font-size: 1.5em;
-  text-align: center;
-  font-weight: 300;
-  letter-spacing: 1px;
-  color: #414042;
   letter-spacing: 4px;
 }
 
@@ -198,15 +181,6 @@ body, html {
   text-align: center;
 }
 
-#fifth-page {
-  height: 100vh;
-  background-color: green;
-}
-
-#sixth-page {
-  height: 100vh;
-}
-
 .font-style h1 {
   color: white;
   font-size: 5em;
@@ -229,7 +203,7 @@ body, html {
 }
 
 .wrapper {
-  padding: 50vh 0;
+  padding: 45vh 0;
 }
 
 hr {

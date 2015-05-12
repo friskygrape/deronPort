@@ -47,21 +47,20 @@ $color-4:#D76702;
 	color: $color-dark;
 }
 
-@mixin page{
-	height: 100vh;
-	//width:100%;
-}
+
 
 
 #ani {
 margin-left:auto;
 margin-right: auto;
+
   width: 150px;
   height: 150px;
   background-color: coral;
   -webkit-animation: square-to-circle 4s .5s infinite cubic-bezier(1,.015,.295,1.225) alternate;
   margin-top:15px;
   margin-bottom:25px;
+  position:absolute;
 }
  
 @-webkit-keyframes square-to-circle {
@@ -95,7 +94,7 @@ margin-right: auto;
 #nav{
 	//width:100%;
 	//background-color:blue;
-	z-index: +1;
+	position:absolute;
 }
 
 #nav ul{
@@ -114,24 +113,26 @@ margin-right: auto;
 }
 
 #first-page {
-	@include page;
-	background-color: white;
+
+
+}
+#close{
+	right:0;
 }
 
 
 #first-page #intro{
-	margin-top:20%;
+	
 }
 
 #first-page #intro h1{
-	@include title-style;
-	//margin: none;
-	//padding: none;
+	//@include title-style;
+	
 }
 
 
 #first-page #intro p{
-	@include para-style;
+	//@include para-style;
 	letter-spacing:4px;
 }
 
@@ -153,7 +154,7 @@ margin-right: auto;
 
 
 #second-page{
-	//@include page;
+
 	background-color: $color-two;
 	//height: 100%;
 	padding: 100px 0;
@@ -233,26 +234,7 @@ margin-right: auto;
 	text-align: center;
 }
 
-#fifth-page{
-	@include page;
-	
-	background-color: green;
-	//height:100%;
 
-	
-}
-
-#sixth-page{
-	@include page;
-}
-
-#parent{
-
-}
-
-#child{
-
-}
 
 .font-style h1{
 	color:white;
@@ -270,7 +252,7 @@ margin-right: auto;
 }
 
 .wrapper{
-	padding: 50vh 0;
+	padding: 45vh 0;
 }
 
 
