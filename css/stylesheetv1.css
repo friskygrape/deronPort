@@ -4,12 +4,12 @@
 
 body, html {
   height: 100%;
-  background-color: #EE6457;
+  min-height: 100%;
 }
 
-.pageL {
+.container-full {
+  margin: 0 auto;
   width: 100%;
-  height: 100vh;
 }
 
 #ani {
@@ -19,6 +19,7 @@ body, html {
   height: 150px;
   background-color: coral;
   -webkit-animation: square-to-circle 4s 0.5s infinite cubic-bezier(1, 0.015, 0.295, 1.225) alternate;
+  margin-top: 15px;
   margin-bottom: 25px;
 }
 
@@ -49,6 +50,10 @@ body, html {
     transform: rotate(180deg);
   }
 }
+#nav {
+  z-index: +1;
+}
+
 #nav ul {
   list-style-type: none;
   font-size: 1.5em;
@@ -70,11 +75,11 @@ body, html {
 
 #first-page {
   height: 100vh;
+  background-color: white;
 }
 
 #first-page #intro {
-  top: 0%;
-  vertical-align: middle;
+  margin-top: 20%;
 }
 
 #first-page #intro h1 {
@@ -83,8 +88,6 @@ body, html {
   font-weight: 900;
   color: #EE6457;
   letter-spacing: 7.5px;
-  margin: none;
-  padding: none;
 }
 
 #first-page #intro p {
@@ -114,14 +117,9 @@ body, html {
   color: #414042;
 }
 
-.backCol {
-  background-color: #EE6457;
-}
-
 #second-page {
-  height: 100%;
-  vertical-align: middle;
-  width: 100%;
+  background-color: #EE6457;
+  padding: 100px 0;
 }
 
 #second-page #mango h1 {
@@ -169,17 +167,12 @@ body, html {
   color: #BFBFBF;
 }
 
-#third-page {
-  height: 100vh;
-}
-
 #third-page h1 {
   font-size: 2.6em;
   text-align: center;
   font-weight: 400;
   color: #EE6457;
   letter-spacing: 3px;
-  margin-top: 50vh;
 }
 
 #third-page p {
@@ -187,38 +180,8 @@ body, html {
   text-align: center;
 }
 
-.blue {
-  height: 200px;
-  width: 100%;
-  background-color: blue;
-}
-
-.white {
-  height: 200px;
-  width: 100%;
-  background-color: white;
-}
-
-.red {
-  height: 150px;
-  width: 80%;
-  background-color: red;
-}
-
-.green {
-  height: 150px;
-  width: 80%;
-  background-color: green;
-}
-
-.purple {
-  height: 150px;
-  width: 80%;
-  background-color: purple;
-}
-
 #fourth-page {
-  height: 100vh;
+  background-color: #EE6457;
 }
 
 #fourth-page h1 {
@@ -227,12 +190,21 @@ body, html {
   font-weight: 400;
   color: #EE6457;
   letter-spacing: 3px;
-  margin-top: 50vh;
+  color: white;
 }
 
 #fourth-page p {
   @inlcude title-style;
   text-align: center;
+}
+
+#fifth-page {
+  height: 100vh;
+  background-color: green;
+}
+
+#sixth-page {
+  height: 100vh;
 }
 
 .font-style h1 {
@@ -256,6 +228,10 @@ body, html {
   color: #414042;
 }
 
+.wrapper {
+  padding: 50vh 0;
+}
+
 hr {
   display: block;
   margin-top: 0.5em;
@@ -264,10 +240,6 @@ hr {
   margin-right: auto;
   border-style: inset;
   border-width: 1px;
-}
-
-.backColor {
-  height: 100%;
 }
 
 /*# sourceMappingURL=stylesheetv1.css.map */
