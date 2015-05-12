@@ -4,6 +4,7 @@
 
 body, html {
   height: 100%;
+  background-color: #EE6457;
 }
 
 .pageL {
@@ -184,6 +185,36 @@ body, html {
 #third-page p {
   @inlcude para-style;
   text-align: center;
+}
+
+.blue {
+  height: 200px;
+  width: 100%;
+  background-color: blue;
+}
+
+.white {
+  height: 200px;
+  width: 100%;
+  background-color: white;
+}
+
+.red {
+  height: 150px;
+  width: 80%;
+  background-color: red;
+}
+
+.green {
+  height: 150px;
+  width: 80%;
+  background-color: green;
+}
+
+.purple {
+  height: 150px;
+  width: 80%;
+  background-color: purple;
 }
 
 #fourth-page {
