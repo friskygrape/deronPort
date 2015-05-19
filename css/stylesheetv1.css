@@ -5,7 +5,6 @@
 body, html {
   height: 100%;
   min-height: 100%;
-  overflow-x: hidden;
 }
 
 .container-full {
@@ -102,8 +101,9 @@ body, html {
 }
 
 #second-page {
-  background-color: #EE6457;
+  background-color: #FF561C;
   padding: 20vh 0;
+  overflow-x: hidden;
 }
 
 #second-page #mango h1 {
@@ -118,7 +118,7 @@ body, html {
   font-size: 2.6em;
   text-align: center;
   font-weight: 400;
-  color: #EE6457;
+  color: #FF561C;
   letter-spacing: 3px;
   margin: 40px;
   color: white;
@@ -148,14 +148,15 @@ body, html {
   letter-spacing: 1px;
   color: #414042;
   margin: 10px 0;
-  color: #BFBFBF;
+  color: white;
+  padding: 0 15px;
 }
 
 #third-page h1 {
   font-size: 2.6em;
   text-align: center;
   font-weight: 400;
-  color: #EE6457;
+  color: #FF561C;
   letter-spacing: 3px;
 }
 
@@ -165,14 +166,14 @@ body, html {
 }
 
 #fourth-page {
-  background-color: #EE6457;
+  background-color: #FF561C;
 }
 
 #fourth-page h1 {
   font-size: 2.6em;
   text-align: center;
   font-weight: 400;
-  color: #EE6457;
+  color: #FF561C;
   letter-spacing: 3px;
   color: white;
 }
@@ -207,14 +208,17 @@ body, html {
   padding: 45vh 0;
 }
 
+.line {
+  display: block;
+  width: 80%;
+  height: 1px;
+  color: white;
+}
+
 hr {
   display: block;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-  margin-left: auto;
-  margin-right: auto;
-  border-style: inset;
-  border-width: 1px;
+  width: 80%;
+  color: #414042;
 }
 
 /*# sourceMappingURL=stylesheetv1.css.map */
