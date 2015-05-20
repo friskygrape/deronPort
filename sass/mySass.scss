@@ -22,21 +22,25 @@ $color-two: #EE6457;
 $color-3:#DA7A02;
 $color-4:#D76702;
 $color-5:#FF561C;
+$color-pink:#F54F61;
+$color-blue:#1DBDB0;
+$color-orange:#D65E25;
+$color-off:#D9D2BF;
 
 
 @mixin title-style{
-	font-size: 5em;
+	font-size: 5.7em;
 	text-align: center;
-	font-weight: 900;
+	font-weight: 300;
 	color: $color-two;
 	letter-spacing:7.5px;
 }
 
 @mixin sec-style{
-	font-size: 2.6em;
+	font-size: 2.7em;
 	text-align: center;
 	font-weight: 400;
-	color: $color-5;
+	color: white;
 	letter-spacing: 3px;
 }
 
@@ -92,16 +96,44 @@ margin-right: auto;
   }
 }
 
+nav a {
+	position: relative;
+	display: inline-block;
+	margin: 20px 25px;
+
+	outline: none;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 300;
+	//text-shadow: 0 0 1px rgba(255,255,255,0.3);
+	font-size: 1.1em;
+	text-align: center;
+}
+
+nav a:hover,
+nav a:focus {
+	outline: none;
+	text-decoration: none;
+}
+
+.center{
+	margin-left: auto;
+	margin-right: auto;
+}
+
 #nav{
 	//width:100%;
 	//background-color:blue;
-	position:absolute;
+	position: absolute;
+	z-index: 2;
 }
 
 #nav ul{
 	list-style-type: none;
-	@include para-style;
-	padding: 26px 0;
+	//@include para-style;
+	//padding: 26px 0;
 }
 
 #nav li{
@@ -110,13 +142,13 @@ margin-right: auto;
 }
 
 #nav a{
-	color: $color-dark;
+	//color: white;
 }
 
 #first-page {
-
-
+	background-color: $color-two;
 }
+
 #close{
 	right:0;
 }
@@ -127,14 +159,16 @@ margin-right: auto;
 }
 
 #first-page #intro h1{
-	//@include title-style;
+	@include title-style;
+	color:white;
 	
 }
 
 
 #first-page #intro p{
-	//@include para-style;
+	@include para-style;
 	letter-spacing:4px;
+	color:$color-dark;
 }
 
 #about{
@@ -156,7 +190,7 @@ margin-right: auto;
 
 #second-page{
 
-	background-color: $color-5;
+	background-color: white;
 	//height: 100%;
 	padding: 20vh 0;
 	overflow-x: hidden;
@@ -177,28 +211,29 @@ margin-right: auto;
 #second-page #mango h2{
 	@include sec-style;
 	margin:40px;
-	color:white;
+	color:$color-two;
 }
 
 #second-page #mango p{
 	@include para-style;
 	margin:  50px 0;
-	color:white;
+	color: $color-dark;
 }
 
-#second-page #images img{
+#third-page #images img{
 	display:block;
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 60px;
 }
 
-#second-page #images p{
+#third-page #images p{
 	@include para-style;
 	margin: 10px 0;
 	color:white;
 	//text-align: left;
 	padding: 0 15px;
+	font-size: 1.3em;
 
 	
 }
@@ -206,14 +241,14 @@ margin-right: auto;
 
 
 #third-page{
-	
+	background-color: $color-two;
 
-	//background-color:$color-one;
 }
 
-#third-page h1{
+#third-page h2{
 	@include sec-style;
 	//margin-top:43vh;
+	color:white;
 }
 
 #third-page p{
@@ -221,18 +256,22 @@ margin-right: auto;
 	text-align: center;
 }
 
+#images{
+	padding: 25vh 0;
+}
+
 
 
 #fourth-page{
-	background-color:$color-5;
+	background-color:white;
 
 	
 }
 
 #fourth-page h1{
 	@include sec-style;
-	color:white;
-	//background-color: blue;
+	color: $color-two;
+
 }
 
 #fourth-page p{
@@ -280,4 +319,67 @@ hr {
    width:80%;
    color:$color-dark;
 }
+
+.red{
+	color:$color-two;
+}
+
+
+/* Effect 21: borders slight translate */
+.cl-effect-21 a {
+	padding: 10px;
+	color: $color-dark;
+	font-weight: 300;
+	text-shadow: none;
+	-webkit-transition: color 0.3s;
+	-moz-transition: color 0.3s;
+	transition: color 0.3s;
+}
+
+.cl-effect-21 a::before,
+.cl-effect-21 a::after {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background: #fff;
+	content: '';
+	opacity: 0;
+	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+	-moz-transition: opacity 0.3s, -moz-transform 0.3s;
+	transition: opacity 0.3s, transform 0.3s;
+	-webkit-transform: translateY(-10px);
+	-moz-transform: translateY(-10px);
+	transform: translateY(-10px);
+}
+
+.cl-effect-21 a::before {
+	top: 0;
+	-webkit-transform: translateY(-10px);
+	-moz-transform: translateY(-10px);
+	transform: translateY(-10px);
+}
+
+.cl-effect-21 a::after {
+	bottom: 0;
+	-webkit-transform: translateY(10px);
+	-moz-transform: translateY(10px);
+	transform: translateY(10px);
+}
+
+.cl-effect-21 a:hover,
+.cl-effect-21 a:focus {
+	color: #fff;
+}
+
+.cl-effect-21 a:hover::before,
+.cl-effect-21 a:focus::before,
+.cl-effect-21 a:hover::after,
+.cl-effect-21 a:focus::after {
+	opacity: 1;
+	-webkit-transform: translateY(0px);
+	-moz-transform: translateY(0px);
+	transform: translateY(0px);
+}
+
 

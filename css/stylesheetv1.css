@@ -51,18 +51,38 @@ body, html {
     transform: rotate(180deg);
   }
 }
+nav a {
+  position: relative;
+  display: inline-block;
+  margin: 20px 25px;
+  outline: none;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 300;
+  font-size: 1.1em;
+  text-align: center;
+}
+
+nav a:hover,
+nav a:focus {
+  outline: none;
+  text-decoration: none;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 #nav {
   position: absolute;
+  z-index: 2;
 }
 
 #nav ul {
   list-style-type: none;
-  font-size: 1.5em;
-  text-align: center;
-  font-weight: 300;
-  letter-spacing: 1px;
-  color: #414042;
-  padding: 26px 0;
 }
 
 #nav li {
@@ -70,22 +90,37 @@ body, html {
   margin: 0 25px;
 }
 
-#nav a {
-  color: #414042;
+#first-page {
+  background-color: #EE6457;
 }
 
 #close {
   right: 0;
 }
 
+#first-page #intro h1 {
+  font-size: 5.7em;
+  text-align: center;
+  font-weight: 300;
+  color: #EE6457;
+  letter-spacing: 7.5px;
+  color: white;
+}
+
 #first-page #intro p {
+  font-size: 1.5em;
+  text-align: center;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: #414042;
   letter-spacing: 4px;
+  color: #414042;
 }
 
 #about h1 {
-  font-size: 5em;
+  font-size: 5.7em;
   text-align: center;
-  font-weight: 900;
+  font-weight: 300;
   color: #EE6457;
   letter-spacing: 7.5px;
   font-weight: 400;
@@ -101,27 +136,27 @@ body, html {
 }
 
 #second-page {
-  background-color: #FF561C;
+  background-color: white;
   padding: 20vh 0;
   overflow-x: hidden;
 }
 
 #second-page #mango h1 {
-  font-size: 5em;
+  font-size: 5.7em;
   text-align: center;
-  font-weight: 900;
+  font-weight: 300;
   color: #EE6457;
   letter-spacing: 7.5px;
 }
 
 #second-page #mango h2 {
-  font-size: 2.6em;
+  font-size: 2.7em;
   text-align: center;
   font-weight: 400;
-  color: #FF561C;
+  color: white;
   letter-spacing: 3px;
   margin: 40px;
-  color: white;
+  color: #EE6457;
 }
 
 #second-page #mango p {
@@ -131,17 +166,17 @@ body, html {
   letter-spacing: 1px;
   color: #414042;
   margin: 50px 0;
-  color: white;
+  color: #414042;
 }
 
-#second-page #images img {
+#third-page #images img {
   display: block;
   margin-left: auto;
   margin-right: auto;
   padding-top: 60px;
 }
 
-#second-page #images p {
+#third-page #images p {
   font-size: 1.5em;
   text-align: center;
   font-weight: 300;
@@ -150,14 +185,20 @@ body, html {
   margin: 10px 0;
   color: white;
   padding: 0 15px;
+  font-size: 1.3em;
 }
 
-#third-page h1 {
-  font-size: 2.6em;
+#third-page {
+  background-color: #EE6457;
+}
+
+#third-page h2 {
+  font-size: 2.7em;
   text-align: center;
   font-weight: 400;
-  color: #FF561C;
+  color: white;
   letter-spacing: 3px;
+  color: white;
 }
 
 #third-page p {
@@ -165,17 +206,21 @@ body, html {
   text-align: center;
 }
 
+#images {
+  padding: 25vh 0;
+}
+
 #fourth-page {
-  background-color: #FF561C;
+  background-color: white;
 }
 
 #fourth-page h1 {
-  font-size: 2.6em;
+  font-size: 2.7em;
   text-align: center;
   font-weight: 400;
-  color: #FF561C;
-  letter-spacing: 3px;
   color: white;
+  letter-spacing: 3px;
+  color: #EE6457;
 }
 
 #fourth-page p {
@@ -185,9 +230,9 @@ body, html {
 
 .font-style h1 {
   color: white;
-  font-size: 5em;
+  font-size: 5.7em;
   text-align: center;
-  font-weight: 900;
+  font-weight: 300;
   color: #EE6457;
   letter-spacing: 7.5px;
 }
@@ -219,6 +264,67 @@ hr {
   display: block;
   width: 80%;
   color: #414042;
+}
+
+.red {
+  color: #EE6457;
+}
+
+/* Effect 21: borders slight translate */
+.cl-effect-21 a {
+  padding: 10px;
+  color: #414042;
+  font-weight: 300;
+  text-shadow: none;
+  -webkit-transition: color 0.3s;
+  -moz-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.cl-effect-21 a::before,
+.cl-effect-21 a::after {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  content: '';
+  opacity: 0;
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+  -moz-transition: opacity 0.3s, -moz-transform 0.3s;
+  transition: opacity 0.3s, transform 0.3s;
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  transform: translateY(-10px);
+}
+
+.cl-effect-21 a::before {
+  top: 0;
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  transform: translateY(-10px);
+}
+
+.cl-effect-21 a::after {
+  bottom: 0;
+  -webkit-transform: translateY(10px);
+  -moz-transform: translateY(10px);
+  transform: translateY(10px);
+}
+
+.cl-effect-21 a:hover,
+.cl-effect-21 a:focus {
+  color: #fff;
+}
+
+.cl-effect-21 a:hover::before,
+.cl-effect-21 a:focus::before,
+.cl-effect-21 a:hover::after,
+.cl-effect-21 a:focus::after {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  transform: translateY(0px);
 }
 
 /*# sourceMappingURL=stylesheetv1.css.map */
